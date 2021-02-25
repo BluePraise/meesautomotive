@@ -1,0 +1,347 @@
+$link-color: #777
+$dark-color: #1E127D
+
+@keyframes anim-opacity-99
+	0%
+		opacity: 0
+	99%
+		opacity: 0
+	100%
+		opacity: 1
+
+.text-center
+	text-align: center
+
+.wrapper
+	max-width: 1440px
+	padding: 0 20px
+	margin: 0 auto
+	position: relative
+
+.header
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 1.3em 0
+	&__menu-icon
+		background: transparent
+		border: none
+		&:focus
+			outline: none
+		+rmin(769)
+			display: none
+	&__info
+		text-align: right
+		font-size: 14px
+		line-height: 16px
+		letter-spacing: 0.08em
+		font-style: normal
+		font-weight: normal
+		color: $link-color
+		display: none
+		+rmin(769)
+			display: block
+		a
+			color: $link-color
+			&:hover
+				color: darken($link-color, 40%)
+
+.header-bg
+	background-image: url(../../img/header-darken.jpg)
+	background-size: cover
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+	height: 800px
+	z-index: -1
+	h2
+		font-weight: bold
+		font-size: 60px
+		line-height: 70px
+		text-align: center
+		color: #FAFAFA
+		position: relative
+
+
+.logo
+	a
+		color: $dark-color
+
+.logo-img
+
+.nav
+	display: none
+	+rmin(769)
+		display: block
+	ul
+		display: flex
+		list-style-type: none
+		margin: 0
+		padding: 0
+	li
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 19px
+		color: $link-color
+		text-transform: uppercase
+		flex-shrink: 0
+		& + li
+			margin-left: 1em
+			+rmin(992)
+				margin-left: 2em
+nav
+	a
+		color: $link-color
+		&:hover
+			color: darken($link-color, 40%)
+
+.welcome-text
+	text-align: center
+	max-width: 620px
+	margin: 0px auto
+	padding: 60px 0 80px 0
+	h3
+		font-weight: bold
+		font-size: 32px
+		line-height: 37px
+		color: #1E127D
+	p
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 19px
+		color: #585858
+
+.section
+	padding: 0
+	&__title
+		font-style: normal
+		font-weight: normal
+		font-size: 48px
+		line-height: 56px
+		text-align: center
+
+.services
+	background-color: #1B1F28
+	background-image: url(../../img/services-bg.jpg)
+	background-size: cover
+	padding: 10px 0 50px 0
+	h3
+		color: #FAFAFA
+	&__list
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		flex-basis: 100%
+		margin: 0 40px
+		text-align: center
+		margin-bottom: 70px
+		+rmin(769)
+			flex-basis: calc(50% - 80px)
+		+rmin(992)
+			flex-basis: calc(33% - 80px)
+
+.cars
+	margin-bottom: 100px
+	margin-top: 100px;
+	overflow: hidden
+	&__list
+		display: flex
+		margin: 0 -40px
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		+rmin(992)
+			justify-content: space-between
+	&__item
+		flex-basis: 100%
+		margin: 0 40px
+		margin-bottom: 40px
+		background: #FAFAFA
+		border: 1px solid #C4C4C4
+		box-sizing: border-box
+		border-radius: 2px
+		+rmin(769)
+			flex-basis: calc(50% - 80px)
+		+rmin(992)
+			flex-basis: calc(33% - 80px)
+
+.car
+	&__img
+		height: 384px
+		width: 100%
+	&__content
+		padding: 0px 40px 40px 40px
+	&__name
+		font-style: normal
+		font-weight: bold
+		font-size: 20px
+		line-height: 23px
+		color: #1E127D
+	&__table
+		width: 100%
+		margin-bottom: 70px
+		th,
+		td
+			text-align: left
+			font-weight: bold
+			font-size: 16px
+			line-height: 19px
+			color: #C4C4C4
+			width: 50%
+		td
+			color: #1B1F28
+	&__link
+		color: #FAFAFA
+		background: #1B1F28
+		border: 1px solid #FAFAFA
+
+.service
+	&__title
+		font-weight: bold
+		font-size: 24px
+		line-height: 28px
+		color: #FAFAFA
+	&__text
+		font-size: 16px
+		line-height: 19px
+		color: #FAFAFA
+		margin-bottom: 40px
+	&__link
+		background: #1B1F28
+		border: 1px solid #FAFAFA
+		color: #FAFAFA
+
+.btn-link
+	border-radius: 2px
+	padding: 15px 36px
+	font-size: 16px
+	line-height: 19px
+	text-align: center
+
+#contact
+	background: #1B1F28
+	padding: 40px 0 200px 0
+	h3
+		margin-bottom: 150px
+	p
+		font-size: 18px
+		line-height: 21px
+		color: #FAFAFA
+	a
+		color: #FAFAFA
+
+
+.copyright
+	font-style: normal
+	font-weight: bold
+	font-size: 24px
+	line-height: 28px
+	color: #C4C4C4
+	text-align: center
+
+
+.is-mobile-overlay-active
+	position: fixed
+	width: 100%
+
+
+.Mobile-overlay
+	position: fixed
+	top: 0
+	left: -99999px
+	bottom: 0
+	z-index: 1010
+	width: 100%
+	transition: left 0s 355ms, background-color 350ms cubic-bezier(.55,0,.1,1) 175ms
+	animation: anim-opacity-99 525ms linear
+	ul
+		padding: 0
+	.header__info
+		text-align: left
+		display: block
+	.menu-item
+		list-style-type: none
+		a
+			font-weight: 500
+			font-style: normal
+			font-size: 16px
+			line-height: 2.4em
+			text-transform: uppercase
+			color: #707070
+
+
+.is-mobile-overlay-active .Mobile-overlay
+	left: 0
+	background-color: #fafafa
+	transition: left 0s,background-color 350ms cubic-bezier(.55,0,.1,1)
+
+
+.enable-load-effects .Mobile-overlay
+	animation: anim-opacity-99 525ms linear
+
+
+.Mobile-overlay-back
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: 0
+
+
+.Mobile-overlay-close
+	outline: 0
+	border: 0
+	padding: 0
+	background-color: transparent
+	text-transform: inherit
+	letter-spacing: inherit
+	position: absolute
+	top: 0
+	right: 0
+	display: block
+	z-index: 1
+	padding: 22px
+	line-height: 0
+	stroke: transparent
+	transition: stroke 350ms cubic-bezier(.55,0,.1,1),background-color 350ms cubic-bezier(.55,0,.1,1)
+	cursor: pointer
+	.is-mobile-overlay-active &
+		background-color: #000
+		stroke: #fff
+		transition: stroke 350ms cubic-bezier(.55,0,.1,1) 175ms,background-color 350ms cubic-bezier(.55,0,.1,1) 175ms
+
+.Mobile-overlay-menu-main
+	box-sizing: border-box
+	position: absolute
+	top: 0
+	bottom: 0
+	z-index: 3
+	width: 100%
+	padding: 36px
+	overflow: auto
+	transition: transform 350ms cubic-bezier(.55,0,.1,1)
+
+.Mobile-overlay-close .Icon--close
+	display: block
+	stroke-width: 3
+	stroke: transparent
+
+.Mobile-overlay-menu
+	position: absolute
+	top: 0
+	bottom: 0
+	z-index: 2
+	width: 80%
+	width: calc(100% - 60px )
+	overflow: hidden
+	background-color: #fafafa
+	transform: translate3d(-100%,0,0)
+	transition: transform 350ms cubic-bezier(.55,0,.1,1) 175ms
+	.is-mobile-overlay-active &
+		transform: translate3d(0,0,0)
+		transition: transform 350ms cubic-bezier(.55,0,.1,1)
