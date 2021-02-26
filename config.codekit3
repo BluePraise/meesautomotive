@@ -125,6 +125,18 @@
       "oAP" : "\/comments.php",
       "oF" : 0
     },
+    "\/css\/owl.carousel-min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/css\/owl.carousel-min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/css\/owl.carousel.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -447,6 +459,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/js\/lib\/jquery.waypoints.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/lib\/jquery.waypoints.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/js\/lib\/modernizr-2.7.1.min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -465,6 +488,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/js\/lib\/owl.carousel.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/lib\/sticky.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/lib\/sticky.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1094,6 +1128,30 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-demo.php",
+      "oF" : 0
+    },
+    "\/template-parts\/contact-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/contact-card.php",
+      "oF" : 0
+    },
+    "\/template-parts\/kenmerken.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/kenmerken.php",
+      "oF" : 0
+    },
+    "\/template-parts\/specificaties.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/specificaties.php",
       "oF" : 0
     }
   },

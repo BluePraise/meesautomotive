@@ -41,13 +41,14 @@
                         <?php get_template_part('template-parts/specificaties'); ?>
                         <?php get_template_part('template-parts/contact-card'); ?>
                     </div>
-                </section>
-                
-                    <?php get_template_part('template-parts/kenmerken'); ?>
+                    <section class="container-xs car-description">
 
-                <?php
-                the_content(); // Dynamic Content
-                ?>
+                        <?php the_content(); ?>
+                    </section>
+                </section>
+
+                <?php get_template_part('template-parts/kenmerken'); ?>
+
 
             </article>
             <!-- /article -->

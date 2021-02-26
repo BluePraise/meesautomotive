@@ -870,6 +870,10 @@ section.welcome.flex.two-col {
 }
 
 .car__content {
+    /* background: -o-linear-gradient(right, #366592, #053061, var(--color-dark));
+    background: linear-gradient(to right, #366592, #053061, var(--color-dark));
+    background: -webkit-linear-gradient(right, #366592, #053061, var(--color-dark)); */
+    -webkit-background-clip: text;
     padding: 0 40px 40px
 }
 
