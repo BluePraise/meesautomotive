@@ -37,9 +37,35 @@ c[b].top+r)/(c[b].height+r),c[b].speed);var e=d.y-c[b].baseY,g=d.x-c[b].baseX;nu
 
     $(".Mobile-overlay-close").click(hideMobileMenu);
   });
+    
+    
+
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            'items': 2,
+            'loop': true,
+            'nav': true,
+            'lazyload': true,
+            'lazyLoadEager': 2,
+            'autoplay': true,
+            'animateOut': true,
+            'slideTransition': 'ease-in-out',
+            'autoplayHoverPause': true,
+            'navText': [
+                "<div class='nav-btn prev-slide'></div>",
+                "<div class='nav-btn next-slide'></div>",
+            ],
+            'responsive': {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 2,
+                },
+                1000: {
+                    items: 2,
+                },
+            },
+        });
+    });
 })(jQuery, this);
-
-
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
-});

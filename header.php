@@ -20,13 +20,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <?php wp_head(); ?>
   
   <script>
-    AOS.init();
     // conditionizr.com
     // configure environment tests
     conditionizr.config({

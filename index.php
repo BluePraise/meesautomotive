@@ -37,9 +37,9 @@
         </div>
     </section>
     <section class="section-container cars">
-            <div class="wrapper">
+        <div class="wrapper">
             <h3 class="section-title dark-gradient-text">Aanbod</h3>
-            <div class="cars__list">
+            <div class="cars__list owl-carousel owl-theme">
                 <?php $loop = new WP_Query(['post_type' => 'cars', 'posts_per_page' => 4]); ?>
 
                 <?php
@@ -86,6 +86,9 @@
                 endwhile;
                 wp_reset_query();
                 ?>
+            </div>
+            <div class="text-center btn-wrapper">
+                <a href="" class="btn-link btn-link__dark" role="button">Bekijk ons gehele aanbod</a>
             </div>
         </div>
     </section>

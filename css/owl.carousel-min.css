@@ -17,7 +17,6 @@
 
 .owl-carousel .owl-stage {
     position: relative;
-    -ms-touch-action: pan-Y;
     touch-action: manipulation;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */
@@ -73,7 +72,6 @@
 .owl-carousel .owl-dot {
     cursor: pointer;
     -webkit-user-select: none;
-    -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -107,7 +105,6 @@
 }
 
 .owl-carousel.owl-drag .owl-item {
-    -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -117,6 +114,7 @@
 
 .owl-carousel.owl-grab {
     cursor: move;
+    cursor: -webkit-grab;
     cursor: grab;
 }
 
@@ -137,7 +135,9 @@
  *  Owl Carousel - Animate Plugin
  */
 .owl-carousel .animated {
+    -webkit-animation-duration: 1000ms;
     animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
@@ -150,7 +150,18 @@
 }
 
 .owl-carousel .fadeOut {
+    -webkit-animation-name: fadeOut;
     animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fadeOut {
@@ -219,7 +230,6 @@
 }
 
 .owl-carousel .owl-video-play-icon:hover {
-    -ms-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
 }
 
