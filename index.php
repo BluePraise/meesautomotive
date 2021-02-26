@@ -88,7 +88,7 @@
                 ?>
             </div>
             <div class="text-center btn-wrapper">
-                <a href="" class="btn-link btn-link__dark" role="button">Bekijk ons gehele aanbod</a>
+                <a href="<?php echo site_url('/aanbod'); ?>" class="btn-link btn-link__dark" role="button">Bekijk ons gehele aanbod</a>
             </div>
         </div>
     </section>
@@ -117,7 +117,7 @@
         </div>
     </section>
 
-    <section class="section-container contact">
+    <section class="section-container contact" id="contact">
         <div class="wrapper dark-gradient">
             <h3 class="section-title">CONTACT</h3>
             <div class="flex two-col">

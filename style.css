@@ -752,33 +752,41 @@ section.welcome.flex.two-col {
 
 .services__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 80px;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .services__item {
-    flex-basis: 100%;
-    margin: 0 40px 70px;
-    border: 1px solid #f0eaea;
+    width: calc(50% - 6px);
+    margin: 0 3px 3px 0;
+    border: 1px solid #dfebf5;
+    /* margin: 0 40px 70px; */
+    /* border: 1px solid #ccc; */
     padding: 30px;
-    box-shadow: 0px -2px 15px #f0eeee;
-    border-radius: 10px;
+    /* box-shadow: 0px -2px 15px #f0eeee; */
+    /* border-radius: 10px; */
 }
 
 @media only screen and (min-width:769px) {
     .services__item {
-        flex-basis: calc(50% - 80px)
+        /* flex-basis: calc(50% - 80px) */
     }
 }
 
 @media only screen and (min-width:992px) {
     .services__item {
-        flex-basis: calc(33% - 80px)
+        /* flex-basis: calc(33% - 80px) */
     }
 }
 
 /* CARS ELEMENTS */
+
+.cars-overview {
+    margin-top: 160px;
+}
 
 .cars {
     overflow: hidden
@@ -807,6 +815,11 @@ section.welcome.flex.two-col {
     border-radius: 6px
 }
 
+.cars-overview .cars__item {
+    margin: 0;
+    border: 1px solid;
+}
+
 .cars__item:nth-child(odd) {
     margin-left: 0;
 }
@@ -831,7 +844,7 @@ section.welcome.flex.two-col {
 
 h4.car__name {
     margin: 0;
-    padding: 30px 0;
+    padding-top: 20px;
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -840,12 +853,16 @@ h4.car__name {
 
 .car__price {
     font-size: 3em;
-    margin: .5em 0
 }
 
 .car__table {
     width: 100%;
     margin-bottom: 70px
+}
+
+.car__table tr {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
 }
 
 .car__table td,
@@ -864,7 +881,7 @@ h4.car__name {
 }
 
 .car__table td {
-    /* color: #1b1f28 */
+    text-align: right;
     font-size: 16px;
 }
 
@@ -1109,6 +1126,15 @@ h4.car__name {
 
 .flex {
     display: flex
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-3-col {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
 .container {
