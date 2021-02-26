@@ -38,3 +38,8 @@ c[b].top+r)/(c[b].height+r),c[b].speed);var e=d.y-c[b].baseY,g=d.x-c[b].baseX;nu
     $(".Mobile-overlay-close").click(hideMobileMenu);
   });
 })(jQuery, this);
+
+
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});

@@ -102,37 +102,34 @@ function messauto_nav()
 }
 
 // Load HTML5 Blank scripts (header.php)
-function messauto_header_scripts()
+function mees_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
+        wp_enqueue_script('jquery');
+
         wp_register_script('conditionizr', get_template_directory_uri() . '/js/lib/conditionizr-4.3.0.min.js', [], '4.3.0'); // Conditionizr
         wp_enqueue_script('conditionizr'); // Enqueue it!
 
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', [], '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('messautoscripts', get_template_directory_uri() . '/js/scripts.js', ['jquery'], '1.0.0'); // Custom scripts
-        wp_enqueue_script('messautoscripts'); // Enqueue it!
-    }
-}
+        wp_register_script('owl', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', ['jquery'], ''); // Custom scripts
+        wp_enqueue_script('owl'); // Enqueue it!
 
-// Load HTML5 Blank conditional scripts
-function messauto_conditional_scripts()
-{
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', ['jquery'], '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
+        wp_register_script('mees-scripts', get_template_directory_uri() . '/js/scripts.js', ['jquery', 'script'], ''); // Custom scripts
+        wp_enqueue_script('mees-scripts'); // Enqueue it!
+        
     }
 }
 
 // Load HTML5 Blank styles
-function messauto_styles()
+function mees_styles()
 {
-    wp_register_style('messstyles', get_template_directory_uri() . '/build/css/app.css', [], '1.0', 'all');
-    wp_enqueue_style('messstyles'); // Enqueue it!
+    wp_register_style('owl-css', get_template_directory_uri() . '/css/owl.carousel.css', ['mees-css'], '', 'all');
+    wp_enqueue_style('owl-css'); // Enqueue it!
 
-    wp_register_style('messauto', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
-    wp_enqueue_style('messauto'); // Enqueue it!
+    wp_register_style('mees-css', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
+    wp_enqueue_style('mees-css'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -293,15 +290,6 @@ function messautogravatar($avatar_defaults)
     return $avatar_defaults;
 }
 
-// Threaded Comments
-function enable_threaded_comments()
-{
-    if (!is_admin()) {
-        if (is_singular() and comments_open() and (get_option('thread_comments') == 1)) {
-            wp_enqueue_script('comment-reply');
-        }
-    }
-}
 
 // Custom Comments Callback
 function messautocomments($comment, $args, $depth)
@@ -353,10 +341,8 @@ function messautocomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
-add_action('init', 'messauto_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'messauto_conditional_scripts'); // Add Conditional Page Scripts
-add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
-add_action('wp_enqueue_scripts', 'messauto_styles'); // Add Theme Stylesheet
+add_action('init', 'mees_header_scripts'); // Add Custom Scripts to wp_head
+add_action('wp_enqueue_scripts', 'mees_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'messauto_pagination'); // Add our HTML5 Pagination
