@@ -1,6 +1,6 @@
-<div class="wrapper">
+
     <!-- footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="mast-footer footer" role="contentinfo">
         <!-- copyright -->
         <p class="copyright">
             <a href="/">
@@ -13,15 +13,14 @@
             </a>
             <br> <?php echo date('Y'); ?>
         </p>
-        <!-- /copyright -->
-    </footer>
-    <!-- /footer -->
-</div>
-<!-- /wrapper -->
-<script>
-</script>
-<?php wp_footer(); ?>
 
+    </footer>
+    
+
+<?php wp_footer(); ?>
+<script>
+    feather.replace()
+</script>
 
 </body>
 

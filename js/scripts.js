@@ -67,5 +67,49 @@ c[b].top+r)/(c[b].height+r),c[b].speed);var e=d.y-c[b].baseY,g=d.x-c[b].baseX;nu
                 },
             },
         });
+
+        $(".owl-carousel-single").owlCarousel({
+            'items': 1,
+            'loop': true,
+            'nav': true,
+            'autoplay': true,
+            'animateOut': true,
+            'slideTransition': "ease-in-out",
+            'autoplayHoverPause': true,
+            // responsive: {
+            //     0: {
+            //         items: 1,
+            //     },
+            //     600: {
+            //         items: 1,
+            //     },
+            //     1000: {
+            //         items: 1,
+            //     },
+            // },
+        });
+
+        $("#sticky-waypoint").waypoint({
+            
+            handler: function (direction) {
+                $("#sticky-waypoint").removeClass("stuck");
+                var $stick_element = $("#sticky-waypoint");
+                var offset = $stick_element.offset();
+                $right = offset.left;
+                console.log("Right: " + $right);
+                if (direction === "down") {
+                    $("#sticky-waypoint").addClass("stuck");
+                    $("#sticky-waypoint").css({ 'left': $right });
+                } else {
+                    
+                }
+            },
+            wrapper: '<div class="sticky-wrapper" />',
+            stuckClass: "stuck",
+            offset: "20%",
+        });
+ 
+   
+
     });
 })(jQuery, this);

@@ -75,6 +75,25 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_60362d576f97e",
+                    "label": "Brandstof",
+                    "name": "brandstof",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_60362d3c6f979",
                     "label": "Aantal deuren",
                     "name": "aantal_deuren",
@@ -97,82 +116,6 @@
                     "key": "field_60362d436f97a",
                     "label": "Aantal zitplaatsen",
                     "name": "aantal_zitplaatsen",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_60362d526f97d",
-                    "label": "Bouwjaar",
-                    "name": "bouwjaar",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_60362d576f97e",
-                    "label": "Brandstof",
-                    "name": "brandstof",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_60362d5b6f97f",
-                    "label": "Kenteken",
-                    "name": "kenteken",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "50",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_60362d6a6f981",
-                    "label": "Acceleratie 0-100",
-                    "name": "acceleratie_0-100",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -588,5 +531,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1614262694
+    "modified": 1614347629
 }

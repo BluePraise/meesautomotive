@@ -8,7 +8,7 @@ get_header(); ?>
 <main class="cars-overview">
     <div class="container section cars">
             <h3 class="section-title"><?php the_title(); ?></h3>
-            <div class="cars__list grid grid-3-col">
+            <div class="cars__list grid">
                 <?php $loop = new WP_Query(['post_type' => 'cars', 'posts_per_page' => -1]); ?>
 
                 <?php

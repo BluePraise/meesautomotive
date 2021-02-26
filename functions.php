@@ -119,17 +119,20 @@ function mees_header_scripts()
         wp_register_script('owl', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', [], ''); // Custom scripts
         wp_enqueue_script('owl', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', ['jquery'], '', true); // Enqueue it!
 
-        wp_register_script('owl', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', [], ''); // Custom scripts
-        wp_enqueue_script('owl', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', ['jquery'], '', true); // Enqueue it!
+        wp_register_script('waypoints', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', [], ''); // Custom scripts
+        wp_enqueue_script('waypoints', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', ['jquery'], '', true); // Enqueue it!
+        wp_register_script('sticky', get_template_directory_uri() . '/js/lib/sticky.min.js', [], ''); // Custom scripts
+        wp_enqueue_script('sticky', get_template_directory_uri() . '/js/lib/sticky.min.js', ['jquery'], '', true); // Enqueue it!
 
 }
 
 add_filter('body_class', 'custom_body_class');
 function custom_body_class($classes)
 {
-    if (is_page('aanbod'))
+    if (is_page('aanbod') || is_single()): 
         $classes[] = 'dark';
-    return $classes;
+        return $classes;
+    endif;
 }
 
 // Load HTML5 Blank styles
