@@ -389,8 +389,8 @@ a:hover {
 .page-title,
 .section-title {
     font-weight: 200;
-    font-size: 64px;
-    line-height: 78px;
+    font-size: 54px;
+    line-height: 68px;
     margin: 0;
     text-align: center;
 }
@@ -710,6 +710,8 @@ section.welcome.flex.two-col {
 }
 
 .welcome {
+    background-color: var(--color-dark);
+    color: var(--color-white);
     align-items: center;
 }
 
@@ -763,13 +765,13 @@ section.welcome.flex.two-col {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    max-width: 940px;
+    /* max-width: 940px; */
     margin-left: auto;
     margin-right: auto;
 }
 
 .services__item {
-    width: calc(50% - 6px);
+    width: calc(33% - 6px);
     margin: 0 3px 3px 0;
     border: 1px solid #dfebf5;
     background-color: white;
@@ -870,10 +872,12 @@ section.welcome.flex.two-col {
 }
 
 .car__content {
+    background-color: var(--color-dark);
+    color: white;
     /* background: -o-linear-gradient(right, #366592, #053061, var(--color-dark));
     background: linear-gradient(to right, #366592, #053061, var(--color-dark));
     background: -webkit-linear-gradient(right, #366592, #053061, var(--color-dark)); */
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     padding: 0 40px 40px
 }
 
@@ -1040,7 +1044,9 @@ h4.car__name {
 
 .cars .spec-block {
     min-height: 100px;
-    max-height: fit-content;
+    height: fit-content;
+    width: 300px;
+    max-width: 400px;
     border: 2px solid #ffffff29;
     border-radius: 6px;
     margin-right: 10px;
@@ -1069,9 +1075,10 @@ h4.car__name {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    background: -webkit-linear-gradient(left, #1c5ace, #86bdfb, #02a8f5);
-    background: -o-linear-gradient(left, #1c5ace, #86bdfb, #02a8f5);
-    background: linear-gradient(to right, #1c5ace, #86bdfb, #02a8f5);
+    background-color: var(--color-dark);
+    /* background: -webkit-linear-gradient(left, #1c5ace, #86bdfb, #02a8f5); */
+    /* background: -o-linear-gradient(left, #1c5ace, #86bdfb, #02a8f5); */
+    /* background: linear-gradient(to right, #1c5ace, #86bdfb, #02a8f5); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1117,6 +1124,11 @@ h4.car__name {
     /* background: #1b1f28; */
     /* padding: 40px 0 0; */
     position: relative
+}
+
+.contact {
+    background-color: var(--color-dark);
+    color: var(--color-white);
 }
 
 .contact .two-col {
@@ -1295,8 +1307,7 @@ h4.car__name {
 }
 
 .mast-footer {
-    margin-top: 80px;
-    padding: 40px 0;
+    margin-top: 20px;
 }
 
 .dark .mast-footer {

@@ -15,7 +15,7 @@
     </section>
     <div class="scroll-down rellax" data-rellax-percentage="0.5"></div>
 
-    <section class="section-container welcome dark-gradient ">
+    <section class="section-container welcome">
         <div class="wrapper container flex two-col">
             <div class="welcome-text" id="welcome">
                 <h3 class="section-title">
@@ -95,8 +95,8 @@
     <!-- /.wrapper -->
 
 
-    <section class="section-container services light" id="services">
-        <div class="wrapper">
+    <section class="services light" id="services">
+        <div class="container-l wrapper">
             <h3 class="section-title">Onze diensten</h3>
             <div class="services__list">
                 <?php $loop = new WP_Query(['post_type' => 'services', 'posts_per_page' => -1]); ?>
@@ -118,7 +118,7 @@
     </section>
 
     <section class="section-container contact" id="contact">
-        <div class="wrapper dark-gradient">
+        <div class="wrapper">
             <h3 class="section-title">CONTACT</h3>
             <div class="flex two-col">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2458.215671277573!2d6.011255215949672!3d51.96649278485249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a3cce1647b85%3A0x15016bedb5377e81!2sSegment%2039%2C%206921%20RC%20Duiven!5e0!3m2!1sen!2snl!4v1594806408731!5m2!1sen!2snl" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

@@ -129,7 +129,7 @@ function mees_header_scripts()
 add_filter('body_class', 'custom_body_class');
 function custom_body_class($classes)
 {
-    if (is_page('aanbod') || is_single()): 
+    if (is_single()): 
         $classes[] = 'dark';
         return $classes;
     endif;
