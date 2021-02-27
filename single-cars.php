@@ -18,7 +18,7 @@
 
                     <?php $gallery = get_field('gallery'); ?>
                     <?php if ($gallery) : ?>
-                        <div class="owl-carousel -grid gr-id-3-col">
+                        <div class="owl-carousel">
                             <?php foreach ($gallery as $gallery_item) : ?>
 
 

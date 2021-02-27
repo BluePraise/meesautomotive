@@ -115,6 +115,49 @@ a:active {
     outline: 0
 }
 
+.btn-link {
+    display: block;
+    border-radius: 6px;
+    padding: 15px 36px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.4px;
+}
+.btn-link:hover {
+    cursor: pointer;
+} 
+
+.btn-link.btn-link__clear {
+    display: inline-block;
+    border: 1px solid var(--color-dark);
+}
+
+.btn-link.btn-link__dark {
+    display: inline-block;
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+.btn-link.btn-link__white {
+    display: inline-block;
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border: 1px solid var(--color-white);
+    transition: all 0.2ms ease-in-out;
+}
+.btn-link.btn-link__clear:hover,
+.btn-link.btn-link__white:hover {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+}
+.btn-link.btn-link__dark:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+    border: 1px solid var(--color-white);
+}
+
 input:focus {
     outline: 0;
     border: 1px solid #04a4cc
@@ -388,7 +431,7 @@ a:hover {
 
 .page-title,
 .section-title {
-    font-weight: 200;
+    font-weight: 700;
     font-size: 54px;
     line-height: 68px;
     margin: 0;
@@ -639,16 +682,11 @@ nav a:hover {
     color: #111
 }
 
-.header-bg {
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: -1
+
+.header-bg .btn-link {
+    margin-top: 30px;
+    /* position: absolute; */
+    z-index: 100000;
 }
 
 section.welcome.flex.two-col {
@@ -669,10 +707,51 @@ section.welcome.flex.two-col {
     max-width: 150px
 }
 
-.logo a {
-    color: #1e127d;
-    display: block
+a.logo{
+    color: black;
+    display: inline-block;
+    margin: 4px 0;
 }
+
+a.logo .beeldmerk {
+    display: inline-block;
+    width: 42px;
+}
+a.logo .company-name {
+    display: inline-block;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 14px;
+    font-weight: 400;
+}
+
+
+.header-bg {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.header-bg a.logo img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+.header-bg .company-name {
+    color: white;
+    font-weight: 800;
+    font-size: 80px !important;
+    line-height: 70px !important;
+}
+
+.header-bg .logo {}
+
 
 .nav {
     display: none
@@ -1044,7 +1123,7 @@ h4.car__name {
 
 .cars .spec-block {
     min-height: 100px;
-    height: fit-content;
+    height: auto;
     width: 300px;
     max-width: 400px;
     border: 2px solid #ffffff29;
@@ -1096,29 +1175,6 @@ h4.car__name {
     /* color: #fafafa */
 }
 
-.btn-link {
-    display: block;
-    background-color: #fff;
-    color: var(--color-dark);
-    border-radius: 6px;
-    padding: 15px 36px;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.4px;
-}
-
-.btn-link.btn-link__clear {
-    display: inline-block;
-    border: 1px solid var(--color-dark);
-}
-
-.btn-link.btn-link__dark {
-    display: inline-block;
-    background-color: var(--color-dark);
-    color: var(--color-white);
-    border: 1px solid var(--color-white);
-}
 
 #contact {
     /* background: #1b1f28; */
@@ -1153,22 +1209,23 @@ h4.car__name {
 
 .contact p {
     font-size: 24px;
-    line-height: 36px font-weight: 300;
+    line-height: 36px; 
+    font-weight: 300;
 }
 
 .copyright {
+    margin: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     color: #c4c4c4;
-    text-align: center
+    text-align: center;
 }
 
-.copyright svg,
-.logo svg {
-    fill: #093b66
-}
+
+
+
 
 .Mobile-overlay,
 .is-mobile-overlay-active {
@@ -1308,6 +1365,7 @@ h4.car__name {
 
 .mast-footer {
     margin-top: 20px;
+    padding: 5px 0;
 }
 
 .dark .mast-footer {
@@ -1394,11 +1452,11 @@ h4.car__name {
 }
 
 .d-block {
-    display: block;
+    display: block !important;
 }
 
 .d-inline-block {
-    display: inline-block;
+    display: inline-block !important;
 }
 
 .post-edit-link {
