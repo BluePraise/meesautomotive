@@ -5,7 +5,7 @@
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             <!-- article -->
-            <article id="post-<?php the_ID(); ?>" <?php post_class('container-l'); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
                 <div class="help-wrapper flex">
                     <div class="icon d-inline-block">
                         <i data-feather="arrow-left"></i>
@@ -18,19 +18,29 @@
 
                     <?php $gallery = get_field('gallery'); ?>
                     <?php if ($gallery) : ?>
-                        <div class="owl-carousel">
-                            <?php foreach ($gallery as $gallery_item) : ?>
-
-
-                                <img src="<?php echo $gallery_item; ?>" alt="<?php the_title(); ?> bij Mees Automotive">
-
-                            <?php endforeach; ?>
+                        <div id="slider" class="flexslider">
+                            <ul class="slides">
+                                <?php foreach ($gallery as $gallery_item) : ?>
+                                <li>
+                                    <img src="<?php echo $gallery_item; ?>" alt="<?php the_title(); ?> bij Mees Automotive">
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <div id="carousel" class="flexslider">
+                            <ul class="slides">
+                                <?php foreach ($gallery as $gallery_item) : ?>
+                                <li>
+                                    <img src="<?php echo $gallery_item; ?>" alt="<?php the_title(); ?> bij Mees Automotive">
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
                         </div>
                     <?php else : ?>
                         <?php if (has_post_thumbnail() && !($gallery)) : ?>
-                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                            <figure class="single-image" title="<?php the_title(); ?>">
                                 <?php the_post_thumbnail(); ?>
-                            </a>
+                            </figure>
 
                         <?php endif; ?>
                     <?php endif; ?>

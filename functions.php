@@ -119,6 +119,9 @@ function mees_header_scripts()
         wp_register_script('owl', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', [], ''); // Custom scripts
         wp_enqueue_script('owl', get_template_directory_uri() . '/js/lib/owl.carousel.min.js', ['jquery'], '', true); // Enqueue it!
 
+        wp_register_script('flexslider', get_template_directory_uri() . '/js/lib/jquery.flexslider-min.js', [], ''); // Custom scripts
+        wp_enqueue_script('flexslider', get_template_directory_uri() . '/js/lib/jquery.flexslider-min.js', ['jquery'], '', true); // Enqueue it!
+
         wp_register_script('waypoints', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', [], ''); // Custom scripts
         wp_enqueue_script('waypoints', get_template_directory_uri() . '/js/lib/jquery.waypoints.min.js', ['jquery'], '', true); // Enqueue it!
         wp_register_script('sticky', get_template_directory_uri() . '/js/lib/sticky.min.js', [], ''); // Custom scripts
@@ -129,7 +132,7 @@ function mees_header_scripts()
 add_filter('body_class', 'custom_body_class');
 function custom_body_class($classes)
 {
-    if (is_single() && is_page('contact') ): 
+    if (is_single() || is_page('contact') ): 
         $classes[] = 'dark';
         return $classes;
     endif;
@@ -140,6 +143,9 @@ function mees_styles()
 {
     wp_register_style('owl', get_template_directory_uri() . '/css/owl.carousel.css', [], '', 'all');
     wp_enqueue_style('owl'); // Enqueue it!
+
+    wp_register_style('flexslider', get_template_directory_uri() . '/css/flexslider.css', [], '', 'all');
+    wp_enqueue_style('flexslider'); // Enqueue it!
 
     wp_register_style('mees', get_template_directory_uri() . '/style.css', [], '1.0', 'all');
     wp_enqueue_style('mees'); // Enqueue it!

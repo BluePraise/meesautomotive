@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
 <main role="main">
-    <section class="header-bg rellax" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/showroom.jpeg);">
+    <section class="header-bg" style="background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/showroom.jpeg);">
         <?php get_template_part("template-parts/logo"); ?> 
         <a href="<?php echo site_url('/aanbod'); ?>" class="d-block btn-link btn-link__white" role="button">Bekijk ons aanbod</a>
     </section>
-    <div class="scroll-down rellax" data-rellax-percentage="0.5"></div>
+    <div class="scroll-down"></div>
 
     <section class="section-container welcome">
         <div class="wrapper container flex two-col">

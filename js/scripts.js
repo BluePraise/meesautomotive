@@ -68,25 +68,22 @@ c[b].top+r)/(c[b].height+r),c[b].speed);var e=d.y-c[b].baseY,g=d.x-c[b].baseX;nu
             },
         });
 
-        $(".owl-carousel-single").owlCarousel({
-            'items': 1,
-            'loop': true,
-            'nav': true,
-            'autoplay': true,
-            'animateOut': true,
-            'slideTransition': "ease-in-out",
-            'autoplayHoverPause': true,
-            // responsive: {
-            //     0: {
-            //         items: 1,
-            //     },
-            //     600: {
-            //         items: 1,
-            //     },
-            //     1000: {
-            //         items: 1,
-            //     },
-            // },
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: true,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+        
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: true,
+            slideshow: true,
+            sync: "#carousel"
         });
 
         $("#sticky-waypoint").waypoint({

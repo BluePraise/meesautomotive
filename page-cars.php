@@ -1,7 +1,7 @@
 <?php
 
 /**
-Template Name: Auto Aanbod
+*Template Name: Auto Aanbod
  */
 
 get_header(); ?>

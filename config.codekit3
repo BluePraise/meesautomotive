@@ -17,6 +17,14 @@
       "oAP" : "\/.editorconfig",
       "oF" : 0
     },
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -305,6 +313,14 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/img\/favicon.ico" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/favicon.ico",
+      "oF" : 0
+    },
     "\/img\/gertjankeizer.jpeg" : {
       "ft" : 16384,
       "iS" : 334512,
@@ -357,19 +373,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/icons\/favicon.ico" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/img\/icons\/favicon.ico",
-      "oF" : 0
-    },
-    "\/img\/icons\/touch.png" : {
+    "\/img\/logo-old.png" : {
       "ft" : 32768,
-      "iS" : 15472,
+      "iS" : 4885,
       "oA" : 0,
-      "oAP" : "\/img\/icons\/touch.png",
+      "oAP" : "\/img\/logo-old.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -390,16 +398,6 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
-    },
-    "\/img\/logo.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/logo.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
     },
     "\/img\/services-bg.jpg" : {
       "ft" : 16384,
@@ -723,6 +721,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page-cars.php",
+      "oF" : 0
+    },
+    "\/page-contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/page-contact.php",
       "oF" : 0
     },
     "\/pagination.php" : {
@@ -1130,6 +1136,14 @@
       "oAP" : "\/template-demo.php",
       "oF" : 0
     },
+    "\/template-parts\/car-card.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/car-card.php",
+      "oF" : 0
+    },
     "\/template-parts\/contact-card.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1138,12 +1152,28 @@
       "oAP" : "\/template-parts\/contact-card.php",
       "oF" : 0
     },
+    "\/template-parts\/contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/contact.php",
+      "oF" : 0
+    },
     "\/template-parts\/kenmerken.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/template-parts\/kenmerken.php",
+      "oF" : 0
+    },
+    "\/template-parts\/logo.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/template-parts\/logo.php",
       "oF" : 0
     },
     "\/template-parts\/specificaties.php" : {

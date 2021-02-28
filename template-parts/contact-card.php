@@ -5,7 +5,7 @@
              <div class="icon d-inline-block">
                  <i data-feather="phone"></i>
              </div>
-             <a class="d-inline-block phone-number link" href="tel:0031652841683">0031652841683</a>
+             <a class="d-inline-block phone-number link" href="tel:003126340600">+31 (0)26 - 23 40 600</a>
          </div>
          <div class="data-wrapper flex">
              <div class="icon d-inline-block">

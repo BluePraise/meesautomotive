@@ -54,7 +54,7 @@
                 <p>
                     <a href="mailto:INFO@MEESAUTOMOTIVE.NL">INFO@MEESAUTOMOTIVE.NL</a>
                 </p>
-                <p><a href="tel:+31262340600">026 - 23 40 600</a></p>
+                <p><a href="tel:+31262340600">+31 (0)26 - 23 40 600</a></p>
             </div>
 
             <button class="header__menu-icon">
@@ -73,7 +73,7 @@
 
                     <div class="header__info">
                         <p><a href="mailto:INFO@MEESAUTOMOTIVE.NL">INFO@MEESAUTOMOTIVE.NL</a></p>
-                                       <p><a class="link" href="tel:+31262340600">(31) 026 - 23 40 600</a></p>
+                                       <p><a class="link" href="tel:+31262340600">+31 (0)26 - 23 40 600</a></p>
                     </div>
                 </nav>
             </div>
