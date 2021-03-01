@@ -98,8 +98,50 @@ function messauto_nav()
         'depth' => 0,
         'walker' => ''
         ]
+        
     );
 }
+
+function extra_nav() {
+    wp_nav_menu([
+        [
+        'theme_location' => 'extra-menu',
+        'menu' => '',
+        'container' => 'div',
+        'container_class' => 'menu-{menu slug}-container',
+        'container_id' => '',
+        'menu_class' => 'menu',
+        'menu_id' => '',
+        'echo' => true,
+        'fallback_cb' => 'wp_page_menu',
+        'before' => '',
+        'after' => '',
+        'link_before' => '',
+        'link_after' => '',
+        'items_wrap' => '<ul>%3$s</ul>',
+        'depth' => 0,
+        'walker' => ''
+        ]
+    ]);
+}
+
+function allow_all_tinymce_elements_attributes( $init ) {
+
+    // Allow all elements and all attributes
+    $ext = '*[*]';
+
+    // Add to extended_valid_elements if it already exists
+    if ( isset( $init['extended_valid_elements'] ) ) {
+        $init['extended_valid_elements'] .= ',' . $ext;
+    } else {
+        $init['extended_valid_elements'] = $ext;
+    }
+
+    // return value
+    return $init;
+}
+
+add_filter('tiny_mce_before_init', 'allow_all_tinymce_elements_attributes');
 
 // Load HTML5 Blank scripts (header.php)
 function mees_header_scripts()

@@ -1378,8 +1378,9 @@ h4.car__name {
 }
 
 .mast-footer {
-    margin-top: 20px;
-    padding: 5px 0;
+    margin-top: 80px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
 }
 
 .dark .mast-footer {

@@ -47,12 +47,17 @@
             </div>
 
             <nav class="nav" role="navigation">
-                <?php messauto_nav(); ?>
+                <?php if(is_front_page()) :
+                    messauto_nav();
+                else: 
+                    extra_nav();
+                endif;
+                ?>
             </nav>
 
             <div class="header__info">
                 <p>
-                    <a href="mailto:INFO@MEESAUTOMOTIVE.NL">INFO@MEESAUTOMOTIVE.NL</a>
+                    <a href="mailto:INFO@MEESAUTOMOTIVE.NL">info@meesautomotive.nl</a>
                 </p>
                 <p><a href="tel:+31262340600">+31 (0)26 - 23 40 600</a></p>
             </div>
@@ -69,10 +74,15 @@
         <div class="Mobile-overlay-menu">
             <div class="Mobile-overlay-menu-main">
                 <nav class="Mobile-overlay-nav Mobile-overlay-nav--primary">
-                    <?php messauto_nav(); ?>
+                    <?php if(is_front_page()) :
+                        messauto_nav(); 
+                    else: 
+                        extra_nav();
+                    endif;
+                    ?>
 
                     <div class="header__info">
-                        <p><a href="mailto:INFO@MEESAUTOMOTIVE.NL">INFO@MEESAUTOMOTIVE.NL</a></p>
+                        <p><a href="mailto:INFO@MEESAUTOMOTIVE.NL">info@meesautomotive.nl</a></p>
                                        <p><a class="link" href="tel:+31262340600">+31 (0)26 - 23 40 600</a></p>
                     </div>
                 </nav>
