@@ -4,7 +4,7 @@
         <!-- copyright -->
         <p class="copyright">
             <?php get_template_part( "template-parts/logo" ); ?>
-            <br> <?php echo date('Y'); ?>
+            <span class="year"><?php echo date('Y'); ?></span>
         </p>
 
     </footer>

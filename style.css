@@ -1224,8 +1224,14 @@ h4.car__name {
     height: 100%
 }
 
-.contact .text-center {
+.contact .text-col {
     width: 50%
+}
+
+.contact .business-hours {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .contact h3 {
@@ -1392,6 +1398,11 @@ h4.car__name {
     margin-top: 80px;
     border-top: 1px solid #ccc;
     padding-top: 20px;
+}
+
+.footer .year {
+    display: inline-block;
+    font-size: 14px;
 }
 
 .dark .mast-footer {
