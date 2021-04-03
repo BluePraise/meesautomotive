@@ -12,5 +12,15 @@
                     <p></p>
                     <p>KVK: 75899981<br>
                         BTW: NL003021848B10</p>
+					<p>
+                 Openingstijden:<br>
+				 Ma: Op Afspraak<br>
+				 Di: Op Afspraak<br>
+				 Wo: 10:00 tot 17:30<br>
+				 Do: 10:00 tot 17:30<br>
+				 Vr: 10:00 tot 17:30<br>
+				 Za: 10:00 tot 17:30<br>
+				
+             </p>
                 </div>
             </div>

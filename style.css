@@ -849,13 +849,13 @@ a.logo .company-name {
     display: flex;
     flex-wrap: wrap;
     margin-top: 80px;
-    /* max-width: 940px; */
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
 }
 
 .services__item {
-    width: calc(33% - 6px);
+	width: 100%;
     margin: 0 3px 3px 0;
     border: 1px solid #dfebf5;
     background-color: white;
@@ -866,14 +866,18 @@ a.logo .company-name {
 }
 
 @media only screen and (min-width:769px) {
+	.services__list {
+		flex-direction: row;
+	}
     .services__item {
-        /* flex-basis: calc(50% - 80px) */
+        width: calc(50% - 6px);
     }
+
 }
 
 @media only screen and (min-width:992px) {
     .services__item {
-        /* flex-basis: calc(33% - 80px) */
+        width: calc(33% - 6px);
     }
 }
 
@@ -912,6 +916,14 @@ a.logo .company-name {
         margin-top: 40px;
         margin-bottom: 40px;
     }
+    .cars-overview .cars__item {
+    	margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:6px) {
+
+ 
 }
 
 .cars .section-title {
@@ -937,7 +949,6 @@ a.logo .company-name {
 }
 
 .cars-overview .cars__item {
-    margin: 0;
     border: 1px solid #ffffff29;
 }
 
@@ -952,8 +963,8 @@ a.logo .company-name {
 }
 
 .car__img {
-    height: 384px;
     width: 100%;
+	height: auto;
     -o-object-fit: cover;
     object-fit: cover;
     font-family: 'object-fit: cover'

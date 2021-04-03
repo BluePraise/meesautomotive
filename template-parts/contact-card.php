@@ -22,6 +22,21 @@
                  6862 AC Oosterbeek
              </p>
          </div>
+		 <div class="data-wrapper flex">
+             <div class="icon d-inline-block">
+                 <i data-feather="clock"></i>
+             </div>
+             <p class="adres d-inline-block">
+                 Openingstijden:<br>
+				 Ma: Op Afspraak<br>
+				 Di: Op Afspraak<br>
+				 Wo: 10:00 tot 17:30<br>
+				 Do: 10:00 tot 17:30<br>
+				 Vr: 10:00 tot 17:30<br>
+				 Za: 10:00 tot 17:30<br>
+				
+             </p>
+         </div>
      </div>
 
  </div>
